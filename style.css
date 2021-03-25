@@ -118,7 +118,7 @@ a:active {
 
 
 /*header expansion*/
-/*-----------------on collapsible content - https://www.youtube.com/watch?v=jXTfoKkPtYY&ab_channel=dcode*/
+/*-----------------on collapsible content - https://stackoverflow.com/questions/55363898/how-to-close-accordion-panels-when-another-one-opens/55364227*/
 .accordion {
 	display: block;
 	width: 100%;
@@ -157,7 +157,9 @@ a:active {
 .accordion-active + .accordion-content { display: block;}
 
 .accordion-content {
+	width: 100%;
 	min-height: 100%; /* allows container to expand with growing content */
+	max-height: 1fr;
 	padding: 5px 0 10px 0;
 	line-height: 1em;
 	display: none;
@@ -224,27 +226,31 @@ a:active {
 }
 
 /*gallery button*/
-.prevBtn {
-	position: absolute;
-	top: 45%;
-	z-index: 10;
-	left: 4%;
-	cursor: pointer;
-	border: none;
-
-	font-size: clamp(19px, 2.5vw, 25px)
-}
-
+.prevBtn,
 .nxtBtn {
 	position: absolute;
 	top: 45%;
 	z-index: 10;
-	right: 4%;
 	cursor: pointer;
 	border: none;
 
-	font-size: clamp(19px, 2.5vw, 25px)
-;}
+	opacity: 0.2;
+  	transition: 0.4s;
+
+	font-size: clamp(25px, 2.5vw, 36px)
+}
+
+.prevBtn { left: 4%; }
+
+.nxtBtn { right: 4%; }
+
+/* ---- fade in button effect --- https://www.w3schools.com/howto/howto_css_fading_buttons.asp */
+.prevBtn:hover,
+.nxtBtn:hover { 
+	opacity: 1; 
+	background: none;
+	color: #000;
+}
 
 /*RESPONSIVE WEB*/
 @media (min-width: 720px) {
