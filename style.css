@@ -22,6 +22,9 @@ h1 {
 	font-weight: 400;
 	font-size: clamp(24px, 3vw, 38px);
 	font-style: italic;
+	line-height: 0.85;
+	padding-top: 3%;
+	padding-bottom: 1.5%;
 }
 
 p {
@@ -236,7 +239,7 @@ a:active {
 .prevBtn,
 .nxtBtn {
 	position: absolute;
-	top: 175px;
+	top: 150px;
 	z-index: 10;
 	cursor: pointer;
 	border: none;
