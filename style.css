@@ -244,7 +244,9 @@ a:active {
 	cursor: pointer;
 	border: none;
 
-	opacity: 0.2;
+	color: white;
+	mix-blend-mode: difference;
+	opacity: 0.45;
   	transition: 0.4s;
 
 	font-size: clamp(25px, 2.5vw, 36px)
