@@ -17,11 +17,13 @@ for (i = 0; i < acc.length; i++) {
 
 //IMG GALLERY - slideshow ------------- https://www.w3schools.com/howto/howto_js_slideshow.asp
 //------------- multiple sliders on 1pg- https://stackoverflow.com/questions/54085770/how-to-get-multiple-slider-on-one-page
-var slideIndex = [1, 1, 1];
-var slideId = ["gallery-slide0", "gallery-slide1", "gallery-slide2"]
+var slideIndex = [1, 1, 1, 1];
+var slideId = ["gallery-slide0", "gallery-slide1", "gallery-slide2", "gallery-slide3"]
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
+showSlides(1, 3);
+
 
 //showSlides(slideIndex);
 

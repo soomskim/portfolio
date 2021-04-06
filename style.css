@@ -239,7 +239,7 @@ a:active {
 .prevBtn,
 .nxtBtn {
 	position: absolute;
-	top: 150px;
+	top: 45%;
 	z-index: 10;
 	cursor: pointer;
 	border: none;
@@ -259,7 +259,8 @@ a:active {
 .nxtBtn:hover { 
 	opacity: 1; 
 	background: none;
-	color: #000;
+	color: white;
+	mix-blend-mode: difference;
 }
 
 /*RESPONSIVE WEB*/
